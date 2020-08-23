@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html canvas</title>
+</head>
+<body>
+    <h1>Html canvas</h1>
+    <p>The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.</p>
+    <p>The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.</p>
+    <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>   
+    <p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+
+    <h4>Example of canvas</h4>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+
+    <h4>Canvas using JavaScript</h4>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+        </script>
+</body>
+</html>
