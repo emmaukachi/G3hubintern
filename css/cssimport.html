@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Imported style sheet</title>
+    <style>
+        @import url("/examples/css/style.css");
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Definition and Usage</h1>
+    <p>The @import rule allows you to import a style sheet into another style sheet.</p>
+    <p>The @import rule must be at the top of the document (but after any @charset declaration).</p>
+    <p>The @import rule also supports media queries, so you can allow the import to be media-dependent.</p>
+    <h1>The styles for this heading are defined in the imported style sheet</h1>
+   	<p>The styles for this paragraph are defined in the embedded style sheet.</p>
+</body>
+</html>
