@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS Opacity</title>
+<style>
+	p {
+		
+        opacity: 0.7;  /* Opacity for Modern Browsers */
+        filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+        zoom: 1;  /* Fix for IE7 */
+		padding: 10px;
+		background: #00ff00;
+	}
+    span {
+        color: blue;
+        border: 1px solid black;
+    }
+
+    .extra span {
+        color: inherit;
+    }
+</style>
+</head>
+<body>
+    <h1>CSS Opacity in Firefox, Safari, Chrome, Opera and IE9</h1>
+
+    <p>Here is the most up to date syntax for CSS opacity in all current browsers.</p>
+    <p>This paragraph is 70% opaque (or 30% transparent). Play with opacity value to see how it works.</p>
+
+        <!--CSS Inherit-->
+    <h1>Inherit Keyword in CSS</h1>>
+    <p>The inherit keyword specifies that a property should inherit its value from its parent element.</p>
+    <p>The inherit keyword can be used for any CSS property, and on any HTML element.</p>
+    <div>
+        Here is <span>a span element</span> which is blue, as span elements are set to be.
+      </div>
+      
+      <div class="extra" style="color:green">
+        Here is <span>a span element</span> which is green, because it inherits from its parent.
+      </div>
+      
+      <div style="color:red">
+        Here is <span>a span element</span> which is blue, as span elements are set to be.
+      </div>
+</body>
+</html>
