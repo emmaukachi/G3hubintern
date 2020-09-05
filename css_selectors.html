@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  text-align: center;
+  color: blue;
+}
+        p {
+  text-align: center;
+  color: red;
+}
+#para {
+  text-align: center;
+  color: blue;
+}
+.head {
+  text-align: center;
+  color: navy;
+}
+div {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: blue;
+}
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+    </style>
+</head>
+<body>
+    <!-- CSS Selectors -->
+    <h1>CSS Selectors</h1>
+    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+
+    <p>We can divide CSS selectors into five categories:</p>
+    <ol>
+        <li>Simple selectors (select elements based on name, id, class)</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+
+    </ol>
+    <h3>The CSS element Selectors</h3>
+    <p>Here, all <p> elements on the page will be center-aligned, with a red text color:</p>
+    
+    <h4>Example:</h4>
+    <h6>This is a heading</h6>
+    <p>This is a paragraph.</p>
+    
+    <h3>CSS id Selectors</h3>
+    <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+    <p>This is a paragraph.</p>
+    <p id="para">I love HTML/CSS</p>
+
+    <h3 class="head">CSS class Selectors</h3>
+
+    <h3>Universal Selectors</h3>
+    <p>The universal selector (*) selects all HTML elements on the page.</p>
+
+    <!--pseudo classes-->
+    <p>Mouse over the div element below to change its background color:</p>
+    <div>Mouse Over Me</div>
+
+    <h2>Simple tool tip hover</h2>
+    <p>Hover over a <div> element to show a <p> element (like a tooltip):</p>
+        <div>Hover over me to show the p element
+            <p>Tada! Here I am!</p>
+        </div>
+
+    
+
+</body>
+</html>
