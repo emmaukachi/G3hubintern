@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Learning</title>
+    <style>
+        .main{
+            margin: 100px;
+            text-align: center;
+            background-color: blueviolet;
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+    <h1>Javascript Variables</h1>
+    <p>Javascript Variables are containers for storing data values</p>
+    <p id="test"></p>
+    <p id="test1"></p>
+    <p id="test2"></p>
+    <p id="test3"></p>
+    <script>
+        //Javascript variable
+        var x = 7;//variable x stores the value 7
+        var y = 5;//variable y stores the value 5
+        var k = x + y;//variable k sums the value of x + y
+        var z = k;//variable z stores the value 12
+        document.getElementById("test").innerHTML =
+        "The value of Z is: " + z;
+        //string variables are written with quotes
+        var firstName = "Emmanuel";
+        var surName = "Richard";
+        var aka = "Emysantos";
+        var fulName = firstName + " " + surName;
+        document.getElementById("test1").innerHTML = 
+        "My names are: " + fulName + " <br> " +"I'm also known as: " + aka;//String concatenation
+        //Javascript Mathematical operators
+        var p1, p2, addup, subtract, divide, multiply, mod;
+        p1 = 28;
+        p2 = 13;
+        addup = p1 + p2;
+        subtract = p1 - p2;
+        divide = p1 / p2;
+        multiply = p1 * p2;
+        mod = p1 % p2;//modulus (Remainder)
+        exp = p2**2;//Exponentiation
+        incre = ++p2;//Increment of 1
+        dec = --p1//Decrement of 1
+        //String concatenation
+        document.getElementById("test2").innerHTML = "Addition = " 
+        + addup + "<br>" + "Subtraction = " + subtract + "<br>" + "Division = " + divide
+        + "<br>" +"Multiplication = "+ multiply + "<br>" + "Modulus = " + mod + "<br>" + 
+        "Exponential = " + exp + "<br>" + "increment = " + incre +
+        "<br>" + "Decrement = " + dec;
+        //comparison operators
+        document.write(p1 == p2)
+        document.write("<br>") 
+        document.write(p1 === p2)
+        document.write("<br>")
+        document.write(p1 != p2)
+        document.write("<br>")
+        document.write(p1 !== p2)
+        document.write("<br>")
+        document.write(p1 > p2)
+        document.write("<br>")
+        document.write(p1 < p2)
+        document.write("<br>")
+        document.write(p1 >= p2)
+        document.write("<br>")
+        document.write(p1 <= p2)
+        
+        
+        //logical operators
+        var x = p1 && p2;
+        p1 || p2;
+        !p1; 
+        document.getElementById("test3").innerHTML =
+        "The value of x is: " + x;
+
+            
+        //Javascript Function
+        function myFunction(p3, p4){
+            return p3 + p4;
+        }
+        document.getElementById("samp").innerHTML = myFunction(7, 12);
+
+    </script>
+    <!--Javascript function-->
+    <h3>Javascript Functions</h3>
+    <p id="samp"></p>
+    <p>A JavaScript function is a block of code designed to perform a particular task</p>
+    <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+
+    </div>
+    
+</body>
+</html>
